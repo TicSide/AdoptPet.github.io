@@ -1,0 +1,449 @@
+/* Estilos para el contenedor principal */
+.PaginawebSignInFormDesktop {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    overflow: hidden;
+}
+
+/* Estilos para el título "¡Sea bienvenido!<br/>Adopt Pet" */
+.SeaParteDeLaFamilia {
+    left: 130px;
+    top: 10px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 48px;
+    font-family: Jacques Francois;  
+    font-weight: 400;
+    word-wrap: break-word;
+    text-shadow: 2px 2px 1px #b1afaf;
+    font-size: 34px;
+}
+
+/* Estilos para el primer rectángulo */
+.Rectangle11 {
+    width: 330px;
+    height: 58px;
+    left: 85px;
+    top: 200px;
+    position: absolute;
+    background: #EFE8E8;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #b1afaf;
+}
+.Rectangle13 {
+    width: 330px;
+    height: 58px;
+    left: 85px;
+    top: 300px;
+    position: absolute;
+    background: #EFE8E8;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #b1afaf;
+}
+.Rectangle12 {
+    width: 330px;
+    height: 58px;
+    left: 85px;
+    top: 400px;
+    position: absolute;
+    background: #EFE8E8;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #b1afaf;
+}
+
+.Rectangle14 {
+    width: 330px;
+    height: 58px;
+    left: 85px;
+    top: 500px;
+    position: absolute;
+    background: #EFE8E8;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #b1afaf;
+}
+
+.MRectangle1 {
+    width: 100px;
+    height: 38px;
+    left: 85px;
+    top: 600px;
+    position: absolute;
+    background: #EFE8E8;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #b1afaf;
+}
+
+.MRectangle2 {
+    width: 100px;
+    height: 38px;
+    left: 200px;
+    top: 600px;
+    position: absolute;
+    background: #EFE8E8;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #b1afaf;
+}
+
+.MRectangle3 {
+    width: 100px;
+    height: 38px;
+    left: 316px;
+    top: 600px;
+    position: absolute;
+    background: #EFE8E8;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #b1afaf;
+}
+
+.FechaNacimiento{
+    left: 96px;
+    top: 560px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+
+/* Estilos para el segundo rectángulo */
+.Rectangle3 {
+    width: 330px;
+    height: 58px;
+    left: 85px;
+    top: 650px;
+    position: absolute;
+    background: #92E27A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 2px 2px 1px #b1afaf;
+}
+
+.Rectangle3:hover{
+    top: 650px;
+    animation: 3s;
+    background-color: #00550b; 
+
+}
+/* Estilos para el tercer rectángulo */
+
+/* Estilos para los elementos de usuario */
+.Usuario {
+    left: 98px;
+    top: 160px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 16px;
+
+}
+
+.EmailPersonal {
+    left: 96px;
+    top: 260px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+.CreaContraseña {
+    left: 96px;
+    top: 360px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+.RepitaContraseña {
+    left: 96px;
+    top: 460px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-size: 16px;
+}
+
+
+
+/* Estilos para "Email o nombre de usuario" */
+.EmailONombreDeUsuario {
+    width: auto;
+    left: 99px;
+    top: 316px;
+    opacity: 50%;
+    position: absolute;
+    color: #333333;
+    font-size: 14px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+    border: transparent;
+    background: transparent;
+    outline: none; 
+}
+
+
+.Nombre {
+    width: auto;
+    left: 99px;
+    top: 216px;
+    opacity: 50%;
+    position: absolute;
+    color: #333333;
+    font-size: 14px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+    border: transparent;
+    background: transparent;
+    outline: none; 
+}
+.Contra {
+    width: auto;
+    left: 99px;
+    top: 416px;
+    opacity: 50%;
+    position: absolute;
+    color: #333333;
+    font-size: 14px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+    border: transparent;
+    background: transparent;
+    outline: none; 
+}
+
+.Repit {
+    width: auto;
+    left: 99px;
+    top: 516px;
+    opacity: 50%;
+    position: absolute;
+    color: #333333;
+    font-size: 14px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+    border: transparent;
+    background: transparent;
+    outline: none; 
+}
+
+.aaaa{
+    width: auto;
+    left: 100px;
+    top: 608px;
+    opacity: 50%;
+    position: absolute;
+    color: #333333;
+    font-size: 14px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+    border: transparent;
+    background: transparent;
+    outline: none;  
+}
+
+
+.dd{
+    width: auto;
+    left: 210px;
+    top: 608px;
+    opacity: 50%;
+    position: absolute;
+    color: #333333;
+    font-size: 14px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+    border: transparent;
+    background: transparent;
+    outline: none;  
+}
+
+.mm{
+    width: auto;
+    left: 330px;
+    top: 608px;
+    opacity: 50%;
+    position: absolute;
+    color: #333333;
+    font-size: 14px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+    border: transparent;
+    background: transparent;
+    outline: none;  
+}
+
+/* Estilos para "Iniciar sesión" */
+.IniciarSesiN {
+    left: 189px;
+    top: 668px;
+    position: absolute;
+    color: white;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: Inknut Antiqua;
+    font-weight: 600;
+    word-wrap: break-word;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+/* Estilos para "Me olvide mi contraseña" */
+.MeOlvideMiContraseA {
+    left: 266px;
+    top: 488px;
+    position: absolute;
+    color: #3B1CFF;
+    font-size: 14px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+/* Estilos para "Vector1" */
+
+
+/* Estilos para "O" */
+
+
+/* Estilos para "No tiene una cuenta" */
+.NoTieneUnaCuenta {
+    left: 88px;
+    top: 663px;
+    position: absolute;
+    color: #4A4A4A;
+    font-size: 16px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Estilos para "1" */
+.Image2 {
+    width: 80px;
+    height: 80px;
+    left: 20px;
+    top: 10px;
+    position: absolute;
+}
+
+/* Estilos para "Image1" */
+.Image1 {
+    width: 1200px;
+    height: 820px;
+    left: 474px;
+    top: -30px;
+    position: absolute;
+
+}
+
+.Vector3 {
+    width: 46px;
+    height: 67px;
+    left: 20px;
+    top: 600px;
+    position: absolute;
+    background: transparent;
+}
+
+/* Estilos para "Vector" */
+.Vector2 {
+    width: 67px;
+    height: 67px;
+    left: 12px;
+    top: 500px;
+    position: absolute;
+    background: transparent;
+}
+
+/* Estilos para el segundo "Vector" */
+.Vector:last-of-type {
+    width: 66px;
+    height: 67.35px;
+    left: 291px;
+    top: 608px;
+    position: absolute;
+    background: transparent;
+    border: transparent;
+}
+
+.O {
+    left: 38px;
+    top: 550px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-family: Inknut Antiqua;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.Group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Vector4 {
+    width: 35px;
+    height: 29.60px;
+    left: 357px;
+    top: 415px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.Vector5 {
+    width: 35px;
+    height: 29.60px;
+    left: 357px;
+    top: 415px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.Vector5 {
+    width: 35px;
+    height: 29.60px;
+    left: 357px;
+    top: 515px;
+    position: absolute;
+}
+
+
