@@ -8,18 +8,16 @@
 }
 body::-webkit-scrollbar{
     width: 10px;
-
+    background: transparent;
 }
-
 body::-webkit-scrollbar-thumb{
     background: #888;
     border-color: #333  ;
     border-radius: 8px;
     animation: 2s;
 }
-
 body::-webkit-scrollbar-thumb:hover{
-    background: #888;
+    background: #333333;
     animation: 2s;
 }
 header{
@@ -34,10 +32,8 @@ header{
 
     background-image: linear-gradient(120deg, #333 0%, #333 100%);
     width: var(--scrollAmount);
-
-    /*  background: linear-gradient(to right, #F24E1E var(--scrollAmount), transparent 0);
+   /*  background: linear-gradient(to right, #F24E1E var(--scrollAmount), transparent 0);
     width: 100%; */
-
     height: 6px;
     position: fixed;
     top: 0;
@@ -50,16 +46,36 @@ nav{
     width: 100%;
     box-shadow: 3px 3px 20px #92E27A;
 }
-
-
+.Home{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+   }
+.Logo{
+    height: 60px;
+    border-radius: 150px;
+    box-shadow: 2px 2px 6px #333333;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
 .SearchBar {
     width: 500px;
     height: 50px;
-    left: 25%;
+    left: 15%;
     top: 15px;
     position: absolute;
     background: #EFE8E8;
-    border-radius: 10px;
+    border-radius: 16px;
     box-shadow: 2px 2px 1px #b1afaf;
     border: 2px;
 }
@@ -72,9 +88,9 @@ nav{
 }
 .Animal{
 
-    width: 500px;
+    width: 430px;
     height: 58px;
-    left: 26%;
+    left: 16%;
     top: 10px;
     opacity: 50%;
     position: absolute;
@@ -87,20 +103,16 @@ nav{
     background: transparent;
     outline: none;
 }
-
-
 nav ul{
     float: right;
     margin-right: 20px;
 }
-
 nav ul li{
     color: #888888;
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
-
 nav ul li a{
     color: #fff;
     font-size: 16px;
@@ -111,11 +123,12 @@ nav ul li a{
     text-shadow:4px 4px 10px  #333333 ;
 
 }
-
-
 li a:hover{
     background: #333333;
     transition: 2s;
+}
+.menu{
+
 }
 .IniciarSesion{
     background: #333;
@@ -141,14 +154,11 @@ li a:hover{
     text-shadow:1px 1px 2px  #333333 ;
 
 }
-
 section.banner{
     background: linear-gradient(to left, rgb(246, 254, 245 ), rgb(234 243 240));
 
     padding: 3rem 0;
 }
-
-
 .containerB{
     width: 90%;
     margin: 0 auto;
@@ -157,22 +167,17 @@ section.banner{
     grid-gap: 2rem;
 
 }
-
 .col1{
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-
 .imgBanner{
     width: 100%;
     border-radius: 14px;
     box-shadow: 6px 6px 10px #333333;
 }
-
-
-
 .col2{
     padding: 1rem 2rem;
     display: flex;
@@ -182,14 +187,12 @@ section.banner{
     font-family: Jacques Francois, serif;
 
 }
-
 h1{
     font-size: 2rem;
     color: #92E27A;
     text-shadow:1px 1px 2px  #333333 ;
 
 }
-
 #txtBanner{
     margin: 2rem 0;
     font-size: 1.3rem;
@@ -197,7 +200,6 @@ h1{
     text-align: justify;
 
 }
-
 .btnBanner{
     background: #333;
     color: #fff;
@@ -216,6 +218,7 @@ h1{
     transition: 3s;
 
 }
+
 /*SECTION SERVICE*/
 .services{
     padding: 3rem 0;
@@ -256,18 +259,15 @@ h1{
     box-shadow: 2px 2px 18px #333333;
     transition: 1s;
 }
-
 .boxS h3{
     color: #92E27A;
     font-size: 40px;
     border: #333333 3px;
 }
-
 h3{
     color: #4c4c4c;
     margin: 10px 0;
 }
-
 .boxS p{
     text-align: center;
 }
@@ -275,7 +275,6 @@ h3{
 /*SECTION PORTAFOLIO*/
 .portafolio{
     padding: 3rem 0;
-
 }
 .TextHelp{
     font-size: 18px;
@@ -294,8 +293,6 @@ h3{
     font-size: 40px;
     font-family: Jacques Francois, serif;
 }
-
-
 .containerP{
     width: 90%;
     margin: 0 auto;
@@ -320,14 +317,12 @@ h3{
     box-shadow: 2px 2px 15px #4c4c4c;
     transition: 1s;
 }
-
 .boxP img:hover{
     width: 410px;
     border-radius: 20px;
     box-shadow: 2px 2px 15px #4c4c4c;
     transition: 1s;
 }
-
 h3{
     color: #4c4c4c;
     margin: 10px 0;
@@ -335,24 +330,22 @@ h3{
 
 
 }
-
 h3:hover{
     margin: 10px 0;
     color: #92E27A;
    transition: 1s;
 
 }
-
 .boxP p{
     text-align: center;
     transition: 1s;
 }
-
 .boxP p:hover{
     text-align: center;
     color: #92E27A;
     transition: 1s;
 }
+
 
 <!---->
 .containerQ{
@@ -368,7 +361,6 @@ h3:hover{
     padding: 3rem 0;
     text-align: center;
 }
-
 .faq-question {
 
     padding: 2rem 2rem;
@@ -380,12 +372,10 @@ h3:hover{
     border-radius: 30px;
     background: #F3FFF1;
 }
-
 .faq-question h2 {
     font-size: 40px;
     font-family: Jacques Francois, serif;
 }
-
 .faq-item {
     background: #ffffff;
     opacity: 100%;
@@ -397,7 +387,6 @@ h3:hover{
     font-size: 18px;
 
 }
-
 .faq-item h3 {
     color: #4c4c4c;
     font-size: 18px;
@@ -405,11 +394,9 @@ h3:hover{
     transition: 1s;
     font-weight: 900;
 }
-
 .faq-item h3:hover {
     color: #92E27A;
 }
-
 .faq-item p {
     padding: 2rem 2rem;
     display: flex;
@@ -420,36 +407,13 @@ h3:hover{
     color: #333333;
     border-radius: 30px;
 }
-
 .faq-item p:hover {
     color: #333333;
 }
 
-.Dog{
-    width: 500px;
-    border-radius: 20px;
-    transition: 1s;
-    box-shadow: 2px 2px 10px#333333;
-}
-.Dog:hover{
-    width: 510px;
-    border-radius: 20px;
-    transition: 1s;
-    box-shadow: 2px 2px 10px#333333;
-}
 
-.Quispe{
-    position: absolute;
-    color: #333333;
-    font-size: 20px;
-    transition: 1s;
-    }
-.Quispe:hover{
-    position: absolute;
-    color: #333333;
-    font-size: 18px;
-    transition: 1s;
-}
+
+
 /*Pie de Pagina - Footer*/
 footer{
     background-color: #333;
@@ -458,7 +422,6 @@ footer{
     margin-top: 50px;
     text-align: center;
 }
-
 .pie-pagina{
     width: 100%;
     background-color: #333333;
@@ -498,10 +461,11 @@ footer{
     height: 45px;
     line-height: 45px;
     color: #fff;
-    margin-right: 10px;
+    margin-top: 10px;
     background-color: transparent;
     text-align: center;
     transition: all 300ms ease;
+
 }
 .pie-pagina .grupo-1 .red-social a:hover{
     color: #92E27A;
@@ -518,16 +482,126 @@ footer{
 .M1,.M2,.M3,.M4{
     color: #92E27A;
 }
-
 .M1,.M2,.M3,.M4:hover{
     color: #3B1CFF;
 }
 
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 1px;
+/*Tablet*/
+@media (max-width: 480px){
+body{
+        padding: 0 0 0;
     }
+header{
+      height: 60px;
+    }
+nav{
+        width: 100%;
+    }
+.Home{
+        padding-left: 10px;
+        border-radius: 1000px;
+    }
+nav ul{
+    float: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    background-color: #4F7E41;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    left: 1000%;
+    transition: left 0.3s;
+}
+nav ul li{
+   float: none;
+   justify-content: center;
+   align-content: center;
+   left: 40%;
+}
+nav ul li a{
+        color: #fff;
+        font-size: 16px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: capitalize;
+        font-family: Jacques Francois, serif;
+        text-shadow:4px 4px 10px  #333333 ;
+
+    }
+nav ul li a:hover {
+        color: rgba(192,255,105,0.77);
+        background: #333333;
+        transition: 0.5s;
+ }
+.checkbtn{
+display: block;
+}
+.MenuDesplegableVisible{
+left: 0;
+
+}
+.SearchBar{
+        display: none;
+    }
+.Animal{
+        display: none;
+    }
+.Pet{
+display: none;
+}
+.FotoLogo{
+    display: none;
+}
+.Contacto{
+    float: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Siguenos{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.red-social{
+    top: auto;
+    float: none;
+    display: block;
+    flex-direction: column;
+    align-items: baseline;
+    content: none;
+    margin: 20px;
+}
+.TextHelp{
+        margin: 30px;
+        font-size: 18px;
+        font-family: Jacques Francois, serif;
+        justify-content: left;
+
+        position: relative;
+    }
+.subPortafolio h2{
+    margin: 15px;
+}
+.subServices p{
+    margin: 20px;
+}
+.portafolio img{
+    width: 95%;
+}
+    .portafolio img:hover{
+        width: 98%;
+    }
+.containerQ{
+    float: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 }
