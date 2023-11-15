@@ -11,43 +11,44 @@
     <title>Adopt Pet</title>
 </head>
 <body>
-<header class="PaginawebSignInFormDesktop">
-    <h1 class="SeaBienvenidoAdoptPet">¡Sea bienvenido!<br/>Adopt Pet</h1>
-    <div class="Rectangle1"></div>
-    <div class="Rectangle3"></div>
-    <div class="Rectangle2"></div>
-    <p class="Usuario">Usuario</p>
-    <p class="Contraseña">Contraseña</p>
-    <label>
-        <input type="text" placeholder="Email o nombre de usuario"  class="EmailONombreDeUsuario">
-    </label>
-    <label for="pass"></label><input type="password" placeholder="Ingresar contraseña" class="IngresarContraseA" id="pass">
-
-    <input type="submit" value="Iniciar Sesión" class="IniciarSesiN">
-    <a href="Recuperate.html" class="MeOlvideMiContraseA">Me olvide mi contraseña</a>
-    <a href="Create.html" class="CreeUnoAhora">Cree uno ahora</a>
-    <div class="Vector1"></div>
-    <p class="O">o</p>
-    <p class="NoTieneUnaCuenta">¿No tiene una cuenta?</p>
-
-    <img class="Image2" src="assets/images/favicon.ico" alt="Imagen 2" >
-    <img class="Image1" src="assets/images/puppy-2785074_1280.jpg" alt="Imagen 1">
+<form class="form">
+    <h2 class="form_title">Iniciar Sesión</h2>
+    <p class="form_paragrapgh">¿Aún no tienes una cuenta?
+    <a href="Create.html" class="form_link">Entra Aqui</a>
+    </p>
 
 
-    <a href="https://www.google.com.pe/"><img class="Vector3" src="assets/images/🦆%20icon%20_google%201_.svg" alt=""></a>
+    <div class="form_container">
+        <div class="form_group">
+        <input type="text" id="name" class="form_input" placeholder=" ">
+        <label for="name" class="form_label">Nombre o Correo electronico</label>
+        <span class="form_line"></span>
+        </div>
 
-    <a href="https://www.facebook.com/"><img class="Vector2" src="assets/images/🦆%20icon%20_facebook_.png" alt="">
+        <div class="form_group">
+            <input type="text" id="user" class="form_input" placeholder=" ">
+            <label for="name" class="form_label">Usuario</label>
+            <span class="form_line"></span>
+        </div>
 
-    </a>
+        <div class="form_group">
+            <input type="text" id="password" class="form_input" placeholder=" ">
+            <label for="name" class="form_label">Contraseña</label>
+            <span class="form_line"></span>
 
-    <div class="Group">
-        <img class="Vector4" src="assets/images/🦆%20icon%20_eye%20slash_.png" id="Eye" alt="">
-        <img class="Vector8" src="assets/images/🦆%20icon%20_eye_.svg" id="Eye2" alt="">
-        <i class='bx bx-show-alt'></i>
-
+        </div>
+        <p class="form_paragrapgh">¿Te olvidaste tu contraseña?
+            <a href="Recuperate.html" class="form_link">Click aqui</a>
+        </p>
+        <input type="submit" class="form_submit" value="Entrar">
 
     </div>
-</header>
-<script src="assets/styles/Login.css"></script>
+
+
+</form>
+
+
 </body>
+
+<script src="assets/styles/Login.css"></script>
 </html>

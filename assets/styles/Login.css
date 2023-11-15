@@ -1,4 +1,27 @@
 /* Estilos para el contenedor principal */
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&family=Jacques+Francois&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Jacques Francois', serif;
+
+
+    background-color: #333333;
+    opacity: 1;
+    background-image:  radial-gradient(#92E27A 0.8px, transparent 0.8px), radial-gradient(#92E27A 0.8px, #333333 0.8px);
+    background-size: 32px 32px;
+    background-position: 0 0,16px 16px;
+
+display: flex;
+    min-height: 100vh;
+}
+
+
 .PaginawebSignInFormDesktop {
     width: 100%;
     height: 100%;
@@ -10,273 +33,96 @@
     position: fixed;
     overflow: hidden;
 }
-
-/* Estilos para el título "¡Sea bienvenido!<br/>Adopt Pet" */
-.SeaBienvenidoAdoptPet {
-    left: 75px;
-    top: 114px;
-    position: absolute;
+.form{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
     text-align: center;
-    color: black;
-    font-size: 48px;
-    font-family: Jacques Francois,serif;
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+.form_paragrapgh{
+    font-weight: 300;
+}
+
+.form_link{
     font-weight: 400;
-    word-wrap: break-word;
-    text-shadow: 2px 2px 1px #b1afaf;
-}
-
-/* Estilos para el primer rectángulo */
-.Rectangle1 {
-    width: 330px;
-    height: 58px;
-    left: 85px;
-    top: 297px;
-    position: absolute;
-    background: #EFE8E8;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px #b1afaf;
-}
-
-/* Estilos para el segundo rectángulo */
-.Rectangle3 {
-    width: 330px;
-    height: 58px;
-    left: 85px;
-    top: 514px;
-    position: absolute;
-    background: #92E27A;
-
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    box-shadow: 2px 2px 1px #b1afaf;
-}
-
-.Rectangle3:hover{
-    top: 514px;
-    animation: 3s;
-    background-color: #00550b;
-
-}
-/* Estilos para el tercer rectángulo */
-.Rectangle2 {
-    width: 330px;
-    height: 58px;
-    left: 85px;
-    top: 412px;
-    position: absolute;
-    background: #EFE8E8;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px #b1afaf;
-}
-
-/* Estilos para los elementos de usuario */
-.Usuario {
-    left: 98px;
-    top: 260px;
-    position: absolute;
-    color: black;
-    font-size: 16px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-
-
-}
-.Contraseña {
-    left: 96px;
-    top: 374px;
-    position: absolute;
-    color: black;
-
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    font-size: 16px;
-}
-
-
-/* Estilos para "Email o nombre de usuario" */
-.EmailONombreDeUsuario {
-    width: auto;
-    left: 99px;
-    top: 316px;
-    opacity: 50%;
-    position: absolute;
     color: #333333;
-    font-size: 14px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    border: transparent;
-    background: transparent;
-    outline: none;
 }
 
-/* Estilos para "Ingresar contraseña" */
-.IngresarContraseA {
-    width: 300px;
-    left: 100px;
-    top: 430px;
-    position: absolute;
-    color: #333333;
-    font-size: 14px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-      opacity: 50%;
-    border: transparent;
-    background: transparent;
-    outline: none;
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
 }
 
-/* Estilos para "Iniciar sesión" */
-.IniciarSesiN {
-    left: 189px;
-    top: 530px;
-    position: absolute;
-    color: white;
-    background-color: transparent;
-    font-size: 20px;
-    font-family: Jacques Francois,serif;
-    font-weight: 600;
-    word-wrap: break-word;
-    border: 1px;
+.form_group{
+    position: relative;
+    --color: #575757e;
+}
+
+.form_input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Jacques Francois', serif;
+}
+.form_input:focus + .form_label, .form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3c9821;
+}
+.form_label{
+    color: var(--color);
     cursor: pointer;
-}
-
-
-/* Estilos para "Me olvide mi contraseña" */
-.MeOlvideMiContraseA {
-    left: 266px;
-    top: 488px;
     position: absolute;
-    color: #3B1CFF;
-    font-size: 14px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s,color .3s;
 }
 
-/* Estilos para "Cree uno ahora" */
-.CreeUnoAhora {
-    left: 266px;
-    top: 667px;
+.form_submit{
+    background-image: linear-gradient(3deg,#cdf2c0,#72d256);
+    color: #333333;
+    font-family: Jacques Francois, serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+    }
+
+.form_line{
     position: absolute;
-    color: #3B1CFF;
-    font-size: 14px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-/* Estilos para "Vector1" */
-.Vector1 {
-    width: 327px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     height: 1px;
-    left: 88px;
-    top: 588px;
-    position: absolute;
-    border: 1px black solid;
+    background-color: #cdf2c0;
+    transform: scale(0);
+    transition: transform .4s;
 }
 
-/* Estilos para "O" */
-.O {
-    left: 243px;
-    top: 607px;
-    position: absolute;
-    color: black;
-    font-size: 20px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
+.form_input:focus ~ .form_line, .form_input:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
 }
 
-/* Estilos para "No tiene una cuenta" */
-.NoTieneUnaCuenta {
-    left: 94px;
-    top: 650px;
-    position: absolute;
-    color: #4A4A4A;
-    font-size: 16px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
+@media (max-width: 480px){
+    .form_title{
+        font-size: 1.8rem;
+    }
 }
-
-/* Estilos para "1" */
-.Image2 {
-    width: 97px;
-    height: 89px;
-    left: 208px;
-    top: 64px;
-    position: absolute;
-}
-
-/* Estilos para "Image1" */
-.Image1 {
-    width: 1200px;
-    height: 820px;
-    left: 474px;
-    top: -30px;
-    position: absolute;
-
-}
-
-.Vector3 {
-    width: 38px;
-    height: 59px;
-    left: 300px;
-    top: 608px;
-    position: absolute;
-    background: transparent;
-}
-
-/* Estilos para "Vector" */
-.Vector2 {
-    width: 50px;
-    height: 50px;
-    left: 145px;
-    top: 608px;
-    position: absolute;
-    background: transparent;
-}
-
-/* Estilos para el segundo "Vector" */
-.Vector:last-of-type {
-    width: 66px;
-    height: 67px;
-    left: 291px;
-    top: 608px;
-    position: absolute;
-    background: transparent;
-    border: transparent;
-}
-
-
-.Group {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.Vector4 {
-    width: 35px;
-    height: 29px;
-    left: 357px;
-    top: 424px;
-    position: absolute;
-    cursor: pointer;
-}
-
-
-.Vector4:hover {
-    width: 35px;
-    height: 29px;
-    left: 357px;
-    top: 424px;
-    position: absolute;
-    cursor: pointer;
-}
-

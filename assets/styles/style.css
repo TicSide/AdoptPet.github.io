@@ -41,7 +41,7 @@ header{
     border-radius: 3px;
 }
 nav{
-    background: #92E27A;
+    background-image: linear-gradient(30deg, #92E27A, #2a5f1c);
     height: 80px;
     width: 100%;
     box-shadow: 3px 3px 20px #92E27A;
@@ -131,7 +131,7 @@ li a:hover{
 
 }
 .IniciarSesion{
-    background: #333;
+    background-image: linear-gradient(30deg, #4f4f4f, #333333);
     color: #fff;
     padding: 10px 20px;
     border-radius: 25px;
@@ -142,7 +142,7 @@ li a:hover{
     transition: 1s;
 }
 .IniciarSesion:hover{
-    background: #fff;
+    background-image: linear-gradient(30deg, #bdbdbd, #ffffff);
     color: #333333;
     padding: 10px 20px;
     border-radius: 25px;
@@ -155,10 +155,11 @@ li a:hover{
 
 }
 section.banner{
-    background: linear-gradient(to left, rgb(246, 254, 245 ), rgb(234 243 240));
-
+    background: linear-gradient(to left, #f5fcf1,#cdf2c0);
     padding: 3rem 0;
 }
+
+
 .containerB{
     width: 90%;
     margin: 0 auto;
@@ -201,7 +202,7 @@ h1{
 
 }
 .btnBanner{
-    background: #333;
+    background-image: linear-gradient(30deg, #4f4f4f, #333333);
     color: #fff;
     padding: 10px 20px;
     border-radius: 25px;
@@ -214,8 +215,8 @@ h1{
 
 }
 .btnBanner:hover{
-    background: #92E27A;
-    transition: 3s;
+    background-image: linear-gradient(30deg, #92E27A, #2a5f1c);
+    transition: 6s;
 
 }
 
@@ -245,7 +246,8 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 50px 5px rgb(0 0 0 /6%);
+    box-shadow: 1px 1px 50px 5px rgb(0 0 0 /10%);
+    border-radius: 30px;
 }
 .boxS img{
     width: 80%;
@@ -292,6 +294,9 @@ h3{
 .subPortafolio h2 {
     font-size: 40px;
     font-family: Jacques Francois, serif;
+    color: #333333;
+    text-shadow: 2px 2px 4px #888888;
+
 }
 .containerP{
     width: 90%;
@@ -308,8 +313,9 @@ h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 55px 5px rgb(0 0 0 /6%);
-    background: #F3FFF1;
+    box-shadow: 1px 1px 55px 5px rgba(32, 86, 43, 25%);
+    background:#cdf2c0;
+    border-radius: 26px;
 }
 .boxP img{
     width: 400px;
@@ -388,35 +394,47 @@ h3:hover{
 
 }
 .faq-item h3 {
-    color: #4c4c4c;
+    color: #0e2b08;
     font-size: 18px;
     margin: 10px 0;
     transition: 1s;
     font-weight: 900;
+    background-image: linear-gradient(45deg, #cdf2c0, #72d256);
+    padding: 18px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 55px 5px rgb(0 0 0 /18%);
 }
 .faq-item h3:hover {
     color: #92E27A;
 }
 .faq-item p {
+    padding: 1rem 1rem;
+    color: transparent;
+    border-radius: 30px;
+    transition: 1s;
+    box-shadow: 1px 1px 55px 5px rgb(0 0 0 /18%);
+
+
+}
+.faq-item p:hover {
     padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 1px 50px 5px rgb(0 0 0 /6%);
-    color: #333333;
+    box-shadow: 1px 1px 55px 5px rgb(0 0 0 /18%);
     border-radius: 30px;
-}
-.faq-item p:hover {
     color: #333333;
+    transition: 2s;
 }
 
+.PetLogo{
+    border-radius: 130px;
 
-
-
+}
 /*Pie de Pagina - Footer*/
 footer{
-    background-color: #333;
+    background-image: linear-gradient(30deg, #262626, #333333);
     color: #fff;
     padding: 20px;
     margin-top: 50px;
@@ -424,7 +442,7 @@ footer{
 }
 .pie-pagina{
     width: 100%;
-    background-color: #333333;
+    background-image: linear-gradient(30deg, #262626, #333333);
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -543,8 +561,9 @@ display: block;
 }
 .MenuDesplegableVisible{
 left: 0;
-
 }
+
+
 .SearchBar{
         display: none;
     }
@@ -576,7 +595,9 @@ display: none;
     align-items: baseline;
     content: none;
     margin: 20px;
+    padding: 10px;
 }
+
 .TextHelp{
         margin: 30px;
         font-size: 18px;
@@ -586,6 +607,7 @@ display: none;
         position: relative;
     }
 .subPortafolio h2{
+    color: #2a5f1c;
     margin: 15px;
 }
 .subServices p{

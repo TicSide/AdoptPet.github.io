@@ -1,4 +1,27 @@
 /* Estilos para el contenedor principal */
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&family=Jacques+Francois&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Jacques Francois', serif;
+
+
+    background-color: #333333;
+    opacity: 1;
+    background-image:  radial-gradient(#92E27A 0.8px, transparent 0.8px), radial-gradient(#92E27A 0.8px, #333333 0.8px);
+    background-size: 32px 32px;
+    background-position: 0 0,16px 16px;
+
+    display: flex;
+    min-height: 100vh;
+}
+
+
 .PaginawebSignInFormDesktop {
     width: 100%;
     height: 100%;
@@ -10,438 +33,96 @@
     position: fixed;
     overflow: hidden;
 }
-
-/* Estilos para el título "¡Sea bienvenido!<br/>Adopt Pet" */
-.SeaParteDeLaFamilia {
-    left: 130px;
-    top: 10px;
-    position: absolute;
+.form{
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/30%);
     text-align: center;
-    color: black;
-    font-size: 36px;
-    font-family: Jacques Francois,serif;
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+.form_paragrapgh{
+    font-weight: 300;
+}
+
+.form_link{
     font-weight: 400;
-    word-wrap: break-word;
-    text-shadow: 2px 2px 1px #b1afaf;
-
+    color: #333333;
 }
 
-/* Estilos para el primer rectángulo */
-.Rectangle11 {
-    width: 330px;
-    height: 58px;
-    left: 85px;
-    top: 200px;
-    position: absolute;
-    background: #EFE8E8;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px #b1afaf;
-}
-.Rectangle13 {
-    width: 330px;
-    height: 58px;
-    left: 85px;
-    top: 300px;
-    position: absolute;
-    background: #EFE8E8;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px #b1afaf;
-}
-.Rectangle12 {
-    width: 330px;
-    height: 58px;
-    left: 85px;
-    top: 400px;
-    position: absolute;
-    background: #EFE8E8;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px #b1afaf;
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
 }
 
-.Rectangle14 {
-    width: 330px;
-    height: 58px;
-    left: 85px;
-    top: 500px;
-    position: absolute;
-    background: #EFE8E8;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px #b1afaf;
+.form_group{
+    position: relative;
+    --color: #575757e;
 }
 
-.MRectangle1 {
-    width: 100px;
-    height: 38px;
-    left: 85px;
-    top: 600px;
-    position: absolute;
-    background: #EFE8E8;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px #b1afaf;
+.form_input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Jacques Francois', serif;
 }
-
-.MRectangle2 {
-    width: 100px;
-    height: 38px;
-    left: 200px;
-    top: 600px;
-    position: absolute;
-    background: #EFE8E8;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px #b1afaf;
+.form_input:focus + .form_label, .form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3c9821;
 }
-
-.MRectangle3 {
-    width: 100px;
-    height: 38px;
-    left: 316px;
-    top: 600px;
-    position: absolute;
-    background: #EFE8E8;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px #b1afaf;
-}
-
-.FechaNacimiento{
-    left: 96px;
-    top: 560px;
-    position: absolute;
-    color: black;
-    font-size: 16px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-
-}
-
-
-/* Estilos para el segundo rectángulo */
-.Rectangle3 {
-    width: 330px;
-    height: 38px;
-    left: 85px;
-    top: 650px;
-    position: absolute;
-    background: #92E27A;
-    border-radius: 10px;
+.form_label{
+    color: var(--color);
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    box-shadow: 2px 2px 1px #b1afaf;
-}
-
-.Rectangle3:hover{
-    top: 650px;
-    animation: 3s;
-    background-color: #00550b;
-
-}
-/* Estilos para el tercer rectángulo */
-
-/* Estilos para los elementos de usuario */
-.Usuario {
-    left: 98px;
-    top: 160px;
     position: absolute;
-    color: black;
-    font-size: 16px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-
-
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s,color .3s;
 }
 
-.EmailPersonal {
-    left: 96px;
-    top: 260px;
-    position: absolute;
-    color: black;
-    font-size: 16px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-
-}
-
-.CreaContraseña {
-    left: 96px;
-    top: 360px;
-    position: absolute;
-    color: black;
-    font-size: 16px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-
-}
-
-.RepitaContraseña {
-    left: 96px;
-    top: 460px;
-    position: absolute;
-    color: black;
-    font-size: 16px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-
-}
-
-
-
-/* Estilos para "Email o nombre de usuario" */
-.EmailONombreDeUsuario {
-    width: auto;
-    left: 99px;
-    top: 316px;
-    opacity: 50%;
-    position: absolute;
+.form_submit{
+    background-image: linear-gradient(3deg,#cdf2c0,#72d256);
     color: #333333;
-    font-size: 14px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    border: transparent;
-    background: transparent;
-    outline: none;
-}
-
-
-.Nombre {
-    width: auto;
-    left: 99px;
-    top: 216px;
-    opacity: 50%;
-    position: absolute;
-    color: #333333;
-    font-size: 14px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    border: transparent;
-    background: transparent;
-    outline: none;
-}
-.Contra {
-    width: auto;
-    left: 99px;
-    top: 416px;
-    opacity: 50%;
-    position: absolute;
-    color: #333333;
-    font-size: 14px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    border: transparent;
-    background: transparent;
-    outline: none;
-}
-
-.Repit {
-    width: auto;
-    left: 99px;
-    top: 516px;
-    opacity: 50%;
-    position: absolute;
-    color: #333333;
-    font-size: 14px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    border: transparent;
-    background: transparent;
-    outline: none;
-}
-
-.aaaa{
-    width: auto;
-    left: 100px;
-    top: 608px;
-    opacity: 50%;
-    position: absolute;
-    color: #333333;
-    font-size: 14px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    border: transparent;
-    background: transparent;
-    outline: none;
-}
-
-
-.dd{
-    width: auto;
-    left: 210px;
-    top: 608px;
-    opacity: 50%;
-    position: absolute;
-    color: #333333;
-    font-size: 14px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    border: transparent;
-    background: transparent;
-    outline: none;
-}
-
-.mm{
-    width: auto;
-    left: 330px;
-    top: 608px;
-    opacity: 50%;
-    position: absolute;
-    color: #333333;
-    font-size: 14px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-    border: transparent;
-    background: transparent;
-    outline: none;
-}
-
-/* Estilos para "Iniciar sesión" */
-.IniciarSesiN {
-    left: 189px;
-    top: 658px;
-    position: absolute;
-    color: white;
-    background-color: transparent;
-    font-size: 16px;
-    font-family: Jacques Francois,serif;
-    font-weight: 600;
-    word-wrap: break-word;
-    border: 1px;
+    font-family: Jacques Francois, serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
     cursor: pointer;
 }
 
-
-/* Estilos para "Me olvide mi contraseña" */
-.MeOlvideMiContraseA {
-    left: 266px;
-    top: 488px;
+.form_line{
     position: absolute;
-    color: #3B1CFF;
-    font-size: 14px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #cdf2c0;
+    transform: scale(0);
+    transition: transform .4s;
 }
 
-
-/* Estilos para "Vector1" */
-
-
-/* Estilos para "O" */
-
-
-/* Estilos para "No tiene una cuenta" */
-.NoTieneUnaCuenta {
-    left: 88px;
-    top: 663px;
-    position: absolute;
-    color: #4A4A4A;
-    font-size: 16px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
+.form_input:focus ~ .form_line, .form_input:not(:placeholder-shown) ~ .form_line{
+    transform: scale(1);
 }
 
-/* Estilos para "1" */
-.Image2 {
-    width: 80px;
-    height: 80px;
-    left: 2160px;
-    top: 10px;
-    position: absolute;
+@media (max-width: 480px){
+    .form_title{
+        font-size: 1.8rem;
+    }
 }
-
-/* Estilos para "Image1" */
-.Image1 {
-    width: 1200px;
-    height: 820px;
-    left: 474px;
-    top: -30px;
-    position: absolute;
-
-}
-
-.Vector3 {
-    width: 46px;
-    height: 67px;
-    left: 20px;
-    top: 600px;
-    position: absolute;
-    background: transparent;
-}
-
-/* Estilos para "Vector" */
-.Vector2 {
-    width: 57px;
-    height: 57px;
-    left: 12px;
-    top: 500px;
-    position: absolute;
-    background: transparent;
-}
-
-/* Estilos para el segundo "Vector" */
-.Vector:last-of-type {
-    width: 66px;
-    height: 67px;
-    left: 291px;
-    top: 608px;
-    position: absolute;
-    background: transparent;
-    border: transparent;
-}
-
-.O {
-    left: 38px;
-    top: 550px;
-    position: absolute;
-    color: black;
-    font-size: 16px;
-    font-family: Jacques Francois,serif;
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.Group {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.Vector4 {
-    width: 35px;
-    height: 30px;
-    left: 357px;
-    top: 415px;
-    position: absolute;
-    cursor: pointer;
-}
-
-
-.Vector5 {
-    width: 35px;
-    height: 29px;
-    left: 357px;
-    top: 415px;
-    position: absolute;
-    cursor: pointer;
-}
-
-.Vector5 {
-    width: 35px;
-    height: 29px;
-    left: 357px;
-    top: 515px;
-    position: absolute;
-}
-
-

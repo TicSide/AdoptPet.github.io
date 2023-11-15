@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="assets/images/favicon.ico">
     <link rel="stylesheet" href="assets/styles/Recuperate.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,35 +11,32 @@
     <title>Adopt Pet</title>
 </head>
 <body>
-<header class="PaginawebSignInFormDesktop">
-    <h1 class="Recupera">Recupera tu<br/>contraseña</h1>
-    <div class="Rectangle11"></div>
 
 
-    <div class="Rectangle3"></div>
-
-    <p class="EmailPersonal">Ingresa tu correo electronico</p>
-    <p class="EmailONombreDeUsuario2">ej. @gmail, @edu.pe</p>
-    <h1 class="Texto">Una vez ingresado,le llegara un enlace<br/>donde usted creara una nueva contraseña</h1>
-
-    <label>
-        <input type="text" placeholder=""  class="EmailONombreDeUsuario">
-    </label>
-
-    <label for="pass"></label><input type="password" placeholder="Ingresar contraseña" class="IngresarContraseA" id="pass">
+<form class="form">
+    <h2 class="form_title">Recuperar Contraseña</h2>
 
 
-    <input type="submit" value="Enviar a mi e-mail" class="IniciarSesiN">
-    <div class="Vector1"></div>
-    <p class="O">o</p>
-
-    <img class="Image2" src="assets/images/favicon.ico" alt="Imagen 2" />
-    <img class="Image1" src="assets/images/puppy-2785074_1280.jpg" alt="Imagen 1" />
+    <div class="form_container">
+        <div class="form_group">
+            <input type="text" id="name" class="form_input" placeholder=" ">
+            <label for="name" class="form_label">Ingresar tu correo electronico</label>
+            <span class="form_line"></span>
+        </div>
+        <p>Una vez ingresado el correo electronico, este le dara otro formulario para crear una nueva contreña</p>
 
 
 
 
-</header>
-<script src="assets/scripts/main.js"></script>
+        <input type="submit" class="form_submit" value="Crear">
+
+    </div>
+
+
+</form>
+
+
 </body>
+
+<script src="assets/styles/Login.css"></script>
 </html>

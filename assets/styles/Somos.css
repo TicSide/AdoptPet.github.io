@@ -8,18 +8,16 @@
 }
 body::-webkit-scrollbar{
     width: 10px;
-
+    background: transparent;
 }
-
 body::-webkit-scrollbar-thumb{
     background: #888;
     border-color: #333  ;
     border-radius: 8px;
     animation: 2s;
 }
-
 body::-webkit-scrollbar-thumb:hover{
-    background: #888;
+    background: #333333;
     animation: 2s;
 }
 header{
@@ -28,6 +26,26 @@ header{
     z-index: 1000;
 }
 
+/* Progress bar */
+#progress-bar {
+    --scrollAmount: 0%;
+
+    background-image: linear-gradient(120deg, #333 0%, #333 100%);
+    width: var(--scrollAmount);
+    /*  background: linear-gradient(to right, #F24E1E var(--scrollAmount), transparent 0);
+     width: 100%; */
+    height: 6px;
+    position: fixed;
+    top: 0;
+    transition: 1s;
+    border-radius: 3px;
+}
+nav{
+    background-image: linear-gradient(30deg, #92E27A, #2a5f1c);
+    height: 80px;
+    width: 100%;
+    box-shadow: 3px 3px 20px #92E27A;
+}
 .Home{
     position: absolute;
     left: 20px;
@@ -38,39 +56,26 @@ header{
     border-radius: 150px;
     box-shadow: 2px 2px 6px #333333;
 }
-
-/* Progress bar */
-#progress-bar {
-    --scrollAmount: 0%;
-
-    background-image: linear-gradient(120deg, #333 0%, #333 100%);
-    width: var(--scrollAmount);
-
-    /*  background: linear-gradient(to right, #F24E1E var(--scrollAmount), transparent 0);
-    width: 100%; */
-
-    height: 6px;
-    position: fixed;
-    top: 0;
-    transition: 1s;
-    border-radius: 3px;
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
-nav{
-    background: #92E27A;
-    height: 80px;
-    width: 100%;
-    box-shadow: 3px 3px 20px #92E27A;
+#check{
+    display: none;
 }
-
-
 .SearchBar {
     width: 500px;
     height: 50px;
-    left: 25%;
+    left: 15%;
     top: 15px;
     position: absolute;
     background: #EFE8E8;
-    border-radius: 10px;
+    border-radius: 16px;
     box-shadow: 2px 2px 1px #b1afaf;
     border: 2px;
 }
@@ -83,9 +88,9 @@ nav{
 }
 .Animal{
 
-    width: 500px;
+    width: 430px;
     height: 58px;
-    left: 26%;
+    left: 16%;
     top: 10px;
     opacity: 50%;
     position: absolute;
@@ -98,20 +103,16 @@ nav{
     background: transparent;
     outline: none;
 }
-
-
 nav ul{
     float: right;
     margin-right: 20px;
 }
-
 nav ul li{
     color: #888888;
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
 }
-
 nav ul li a{
     color: #fff;
     font-size: 16px;
@@ -122,9 +123,15 @@ nav ul li a{
     text-shadow:4px 4px 10px  #333333 ;
 
 }
+li a:hover{
+    background: #333333;
+    transition: 2s;
+}
+.menu{
 
-nav ul li a .Team{
-    background: #333;
+}
+.IniciarSesion{
+    background-image: linear-gradient(30deg, #4f4f4f, #333333);
     color: #fff;
     padding: 10px 20px;
     border-radius: 25px;
@@ -134,11 +141,30 @@ nav ul li a .Team{
     box-shadow:2px 2px 2px  #333333 ;
     transition: 1s;
 }
+.IniciarSesion:hover{
+    background-image: linear-gradient(30deg, #bdbdbd, #ffffff);
+    color: #333333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Jacques Francois,serif;
+    box-shadow:2px 2px 2px  #333333 ;
+    transition: 1s;
+    text-shadow:1px 1px 2px  #333333 ;
 
-li a:hover{
-    background: #333333;
-    transition: 2s;
 }
+section.banner{
+    background: linear-gradient(to left, #f5fcf1,#cdf2c0);
+    padding: 3rem 0;
+}
+
+
+
+.MenuDesplegableVisible{
+    left: 0;
+}
+
 .IniciarSesion{
     background: #333;
     color: #fff;
@@ -165,8 +191,7 @@ li a:hover{
 }
 
 section.banner{
-    background: linear-gradient(to left, rgb(246, 254, 245 ), rgb(234 243 240));
-
+    background: linear-gradient(to left, #f5fcf1,#cdf2c0);
     padding: 3rem 0;
 }
 
@@ -189,7 +214,7 @@ section.banner{
 
 .imgBanner{
     width: 100%;
-    border-radius: 14px;
+    border-radius: 34px;
     box-shadow: 6px 6px 10px #333333;
 }
 
@@ -259,6 +284,7 @@ h1{
     grid-gap: 2rem;
 }
 .boxS{
+    border-radius: 30px;
     padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
@@ -303,7 +329,6 @@ footer{
     margin-top: 50px;
     text-align: center;
 }
-
 .pie-pagina{
     width: 100%;
     background-color: #333333;
@@ -363,16 +388,145 @@ footer{
 .M1,.M2,.M3,.M4{
     color: #92E27A;
 }
-
 .M1,.M2,.M3,.M4:hover{
     color: #3B1CFF;
 }
 
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
-        padding: 35px 1px;
+
+
+@media (max-width: 480px){
+    body{
+        padding: 0 0 0;
+    }
+    header{
+        height: 60px;
+    }
+    nav{
+        width: 100%;
+    }
+    .Home{
+        padding-left: 10px;
+        border-radius: 1000px;
+    }
+    nav ul{
+        float: none;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 100px;
+        background-color: #4F7E41;
+        position: fixed;
+        top: 80px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 1000%;
+        transition: left 0.3s;
+    }
+    nav ul li{
+        float: none;
+        justify-content: center;
+        align-content: center;
+        left: 40%;
+    }
+    nav ul li a{
+        color: #fff;
+        font-size: 16px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: capitalize;
+        font-family: Jacques Francois, serif;
+        text-shadow:4px 4px 10px  #333333 ;
+
+    }
+    nav ul li a:hover {
+        color: rgba(192,255,105,0.77);
+        background: #333333;
+        transition: 0.5s;
+    }.checkbtn{
+         font-size: 30px;
+         color: white;
+         float: right;
+         line-height: 90px;
+         margin-right: 40px;
+         cursor: pointer;
+         display: none;
+     }
+    #check{
+        display: none;
+    }
+    .MenuDesplegableVisible{
+        left: 0;
+    }
+
+
+    .SearchBar{
+        display: none;
+    }
+    .Animal{
+        display: none;
+    }
+    .Pet{
+        display: none;
+    }
+    .FotoLogo{
+        display: none;
+    }
+    .Contacto{
+        float: none;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Siguenos{
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+    .red-social{
+        top: auto;
+        float: none;
+        display: block;
+        flex-direction: column;
+        align-items: baseline;
+        content: none;
+        margin: 20px;
+        padding: 10px;
+    }
+
+  #txtBanner.Texto1{
+      font-size: 16px;
+      justify-content: center;
+  }
+    .TextHelp{
+        margin: 30px;
+        font-size: 18px;
+        font-family: Jacques Francois, serif;
+        justify-content: left;
+
+        position: relative;
+    }
+    .subPortafolio h2{
+        color: #2a5f1c;
+        margin: 15px;
+    }
+    .subServices p{
+        margin: 20px;
+    }
+    .portafolio img{
+        width: 95%;
+    }
+    .portafolio img:hover{
+        width: 98%;
+    }
+    .containerQ{
+        float: none;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .checkbtn{
+        display: block;
     }
 }

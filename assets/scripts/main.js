@@ -1,8 +1,8 @@
 const services = document.querySelector("#services");
 const portafolio = document.querySelector("#portafolio");
+const faq = document.querySelector("#faq");
 const buttonA = document.querySelector(".checkbtn");
 const menu =document.querySelector(".MenuDesplegableVisible");
-
 
 buttonA.addEventListener("click", () => {
     menu.classList.toggle("MenuDesplegableVisible");
@@ -13,6 +13,12 @@ buttonA.addEventListener("click", () => {
         buttonA.setAttribute("aria-label", "Abrir menú");
     }
 });
+
+
+
+
+
+
 services.addEventListener("click", (s) => {
     s.preventDefault();
     const sectionS = document.querySelector(".services");
@@ -23,6 +29,13 @@ portafolio.addEventListener("click", (p) => {
     const sectionP = document.querySelector(".portafolio");
     sectionP.scrollIntoView({behavior: "smooth"});
 })
+
+faq.addEventListener("click", (p) => {
+    p.preventDefault();
+    const sectionP = document.querySelector(".faq");
+    sectionP.scrollIntoView({behavior: "smooth"});
+})
+
 let processScroll = () => {
     let docElem = document.documentElement,
         docBody = document.body,
